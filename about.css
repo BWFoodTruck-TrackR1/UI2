@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Skranji&family=Vast+Shadow&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.head{
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(90deg,#ffa384,#e7f2f8,#74bdcb);
+ }
+
+.buttons{
+    display: flex;
+}
+
+.buttons a{
+    text-decoration: none;
+    padding: 1%;
+    margin-left: 5%;
+    font-family: 'McLaren', cursive;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px black;
+}
+
+.container{
+    background-color: #e7f2f8;
+    padding-top: 5%;
+    border: 10px solid white;
+}
+
+.bubble{
+    margin: 8%;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+h1{
+    padding: 2%;
+    font-family: 'McLaren', cursive;
+    font-size: 5rem;
+    text-shadow: 1px 1px salmon;
+}
+
+.aboutUs p{
+    padding: 2%;
+    font-family: 'McLaren', cursive;
+    font-size: 1.5rem;
+}
+
+img{
+    border-radius: 150px;
+    width: 25rem;
+}
+
+.team p{
+    font-family: 'McLaren', cursive;
+    font-size: 1.5rem;
+    padding: .5%;
+}
+
+.person{
+    padding-bottom: 5%;
+}
+
+.group2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.group3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* animation code */
+
+.home:hover{
+    letter-spacing: 5px;
+    transition-duration: 1s;
+}
+
+.about:hover{
+    letter-spacing: 5px;
+    transition-duration: 1s;
+}
+
+.contact:hover{
+    letter-spacing: 5px;
+    transition-duration: 1s;
+}
+
+.register:hover{
+    letter-spacing: 5px;
+    transition-duration: 1s;
+}
+
+/* tablet / mobile view */
+
+@media(max-width: 800px){
+    .group2{
+        flex-direction: column;
+    }
+    
+    .group3{
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .aboutUs p{
+        font-size: 1rem;
+    }
+}

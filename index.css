@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Skranji&family=Vast+Shadow&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url("pics/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo{
+    padding: 45%
+}
+
+.logo img {
+    position: fixed;
+    top: 30%;
+    left: 70%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    border-radius: 150px;
+    z-index: -1;
+ }
+
+ .head{
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(90deg,#ffa384,#e7f2f8,#74bdcb);
+ }
+
+.buttons{
+    display: flex;
+}
+
+.buttons a{
+    text-decoration: none;
+    padding: 1%;
+    margin-left: 5%;
+    font-family: 'McLaren', cursive;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px black;
+}
+
+.border{
+    border: 10px solid white;
+    background-image: url("pics/iceback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.middle{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.middle img{
+    padding: 1%;
+    width: 50px;
+    border-radius: 150px;
+}
+.middle input[type=text]{
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+.ex1{
+    background: linear-gradient(-30deg , transparent 0%, #E7F2F8 70%,  white 100%); 
+}
+
+.ex1pic{
+    display: flex;
+}
+
+.ex1 img{
+    width: 30rem;
+    height: 20rem;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    border: 1px solid #74BDCB;
+    box-shadow: 0.03rem 0.01rem 5rem 0.3rem #74BDCB;
+}
+
+.ex1 p{
+    color: white;
+    padding-top: 3%;
+    font-size: 1.5rem;
+    font-family: 'McLaren', cursive;
+    text-shadow: 1px 1px black;
+}
+
+.ex2{
+    background: linear-gradient(-30deg , white 0%, #E7F2F8 30%, transparent);
+}
+
+.ex2pic{
+    display: flex;
+}
+
+.ex2 img{
+    width: 30rem;
+    height: 20rem;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    border: 1px solid #74BDCB;
+    box-shadow: 0.03rem 0.01rem 5rem 0.3rem #74BDCB;
+}
+
+.ex2 p{
+    color: white;
+    padding-left: 2%;
+    padding-top: 3%;
+    font-size: 1.5rem;
+    font-family: 'McLaren', cursive;
+    text-shadow: 1px 1px black;
+}
+
+.text {
+    text-align: center;
+    padding-top: 5%;
+}
+
+h1{
+    font-family: 'McLaren', cursive;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 1px 1px black;
+}
+
+footer{
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #74BDCB;
+}
+
+footer .buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* animation code */
+
+.home:hover{
+    letter-spacing: 5px;
+    transition-duration: 1s;
+}
+
+.about:hover{
+    letter-spacing: 5px;
+    transition-duration: 1s;
+}
+
+.contact:hover{
+    letter-spacing: 5px;
+    transition-duration: 1s;
+}
+
+.register:hover{
+    letter-spacing: 5px;
+    transition-duration: 1s;
+}
+
+/* start of tablet view */
+
+@media(max-width: 800px){
+    .ex1pic{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ex2pic{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px){
+    .ex1pic{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ex2pic{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ex1 p{
+        font-size: 1rem;
+    }
+
+    .ex2 p{
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+}
